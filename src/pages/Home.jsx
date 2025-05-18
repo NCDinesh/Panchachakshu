@@ -11,6 +11,7 @@ const Home = () => {
         </svg>
       ),
       description: 'Power systems, wiring, automation solutions for modern infrastructure.',
+      hash: "electrical"
     },
     {
       title: 'Civil Engineering',
@@ -20,6 +21,7 @@ const Home = () => {
         </svg>
       ),
       description: 'Structural design, construction management, and surveying expertise.',
+       hash: "civil"
     },
     {
       title: 'Computer Engineering',
@@ -29,6 +31,7 @@ const Home = () => {
         </svg>
       ),
       description: 'Software development, IoT solutions, and embedded systems.',
+       hash: "computer"
     },
     {
       title: 'Architecture',
@@ -38,6 +41,7 @@ const Home = () => {
         </svg>
       ),
       description: 'Innovative design, sustainable planning, and architectural excellence.',
+       hash: "architecture"
     },
     {
       title: 'Mechanical Engineering',
@@ -48,6 +52,7 @@ const Home = () => {
         </svg>
       ),
       description: 'Product design, CAD modeling, and thermal analysis solutions.',
+     hash: "mechanical"
     },
   ];
 
@@ -109,7 +114,7 @@ const Home = () => {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                 <p className="text-gray-600">{service.description}</p>
                 <Link
-                  to={`/services#${service.title.toLowerCase().replace(' ', '-')}`}
+                  to={`/services#${service.hash}`}
                   className="inline-block mt-4 text-secondary hover:text-secondary-light font-medium"
                 >
                   Learn more →

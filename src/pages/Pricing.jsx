@@ -4,46 +4,42 @@ import { Link } from 'react-router-dom';
 const Pricing = () => {
   const plans = [
     {
-      name: 'Basic Consultation',
-      price: '499',
+      name: '3 Months subscription',
+      price: '70K',
       description: 'Perfect for small projects and initial consultations',
       features: [
-        'Initial Project Assessment',
-        'Basic Design Review',
-        '2 Revision Rounds',
-        'Digital Documentation',
-        'Email Support',
+        'Occasion/Information Post',
+        'Social Medai Handeling',
+        'Analytics and Reports every 3 days',
+        '2 paid Advertisement per month',
+        'Video Shoot and editing (2 videos per month)',
       ],
       recommended: false,
     },
     {
-      name: 'Professional Package',
-      price: '1,499',
-      description: 'Ideal for medium-sized projects and detailed engineering solutions',
+      name: '1 Year Subscription',
+      price: '240K',
+      description: 'Tailored for large-scale and complex engineering projects',
+
       features: [
-        'Comprehensive Project Analysis',
-        'Detailed Design & Planning',
-        'Unlimited Revisions',
-        'Project Management Support',
-        '3D Modeling & Visualization',
-        'Priority Email & Phone Support',
-        'Weekly Progress Reports',
+        'Occasion/Information Post',
+        'Social Medai Handeling',
+        'Analytics and Reports every 3 days',
+        '2 paid Advertisement per month',
+        'Video Shoot and editing (2 videos per month)',
       ],
       recommended: true,
     },
     {
-      name: 'Enterprise Solution',
-      price: 'Custom',
-      description: 'Tailored for large-scale and complex engineering projects',
-      features: [
-        'Full-Scale Project Management',
-        'Multi-disciplinary Team',
-        'Custom Solution Development',
-        'On-site Consultations',
-        'Dedicated Project Manager',
-        '24/7 Priority Support',
-        'Monthly Executive Reports',
-        'Risk Assessment & Mitigation',
+      name: '6 Months Subscription',
+      price: '130K',
+      description: 'Ideal for medium-sized projects and detailed engineering solutions',
+     features: [
+        'Occasion/Information Post',
+        'Social Medai Handeling',
+        'Analytics and Reports every 3 days',
+        '2 paid Advertisement per month',
+        'Video Shoot and editing (2 videos per month)',
       ],
       recommended: false,
     },
@@ -118,12 +114,12 @@ const Pricing = () => {
                   <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
                   <div className="mb-4">
                     <span className="text-4xl font-bold">
-                      {typeof plan.price === 'string' && plan.price !== 'Custom' ? '$' : ''}
+                      {typeof plan.price === 'string' && plan.price !== 'Custom' ? 'Rs.' : ''}
                       {plan.price}
                     </span>
-                    {typeof plan.price === 'string' && plan.price !== 'Custom' && (
+                    {/* {typeof plan.price === 'string' && plan.price !== 'Custom' && (
                       <span className="text-gray-600">/project</span>
-                    )}
+                    )} */}
                   </div>
                   <p className="text-gray-600 mb-6">{plan.description}</p>
                   <ul className="space-y-3 mb-8">

@@ -33,41 +33,43 @@ const About = () => {
 
   const team = [
     {
-      name: 'Dr. Rajesh Kumar',
+      name: 'Er. Aavash Adhikari',
       role: 'Chief Executive Officer',
       image: '/images/team/ceo.jpg',
-      description: 'With over 20 years of experience in engineering and leadership.',
+      // description: 'With over 20 years of experience in engineering and leadership.',
     },
     {
-      name: 'Er. Priya Sharma',
-      role: 'Head of Civil Engineering',
+      name: 'Er. Mahesh Raj Joshi',
+      role: 'Chief Operating Officer',
       image: '/images/team/civil-head.jpg',
-      description: 'Expert in sustainable infrastructure development.',
+      // description: 'Expert in sustainable infrastructure development.',
     },
     {
-      name: 'Er. Amit Patel',
-      role: 'Head of Electrical Engineering',
+      name: 'Lekhnath Neupane',
+      role: 'Chief Technical Officer',
       image: '/images/team/electrical-head.jpg',
-      description: 'Specialist in power systems and renewable energy.',
+      // description: 'Specialist in power systems and renewable energy.',
+    },
+      {
+      name: 'Lekhnath Neupane',
+      role: 'Chief Technical Officer',
+      image: '/images/team/electrical-head.jpg',
+      // description: 'Specialist in power systems and renewable energy.',
+    },
+
+    {
+      name: 'Nitesh Mishra',
+      role: 'Marketing Manager',
+      image: '/images/team/marketing.jpg',
+      // description: 'Leading innovation in software and IoT solutions.',
     },
     {
-      name: 'Er. Sarah Khan',
+      name: 'Dinesh Nepal',
       role: 'Software Developer',
       image: '/images/team/softwaredeveloper.jpg',
-      description: 'Leading innovation in software and IoT solutions.',
+      // description: 'Award-winning architect with a focus on sustainable design.',
     },
-    {
-      name: 'Ar. Michael Chen',
-      role: 'Head of Architecture',
-      image: '/images/team/architecture-head.jpg',
-      description: 'Award-winning architect with a focus on sustainable design.',
-    },
-    {
-      name: 'Er. Vikram Singh',
-      role: 'Head of Mechanical Engineering',
-      image: '/images/team/mechanical-head.jpg',
-      description: 'Expert in industrial automation and manufacturing.',
-    },
+
   ];
 
   return (

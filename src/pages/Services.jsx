@@ -1,5 +1,8 @@
+import { useEffect } from "react";
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
+
 
 const Services = () => {
   const services = [
@@ -100,6 +103,19 @@ const Services = () => {
       ],
     },
   ];
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
 
   return (
     <div>
