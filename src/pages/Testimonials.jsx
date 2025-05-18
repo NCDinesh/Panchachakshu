@@ -9,9 +9,10 @@ const Testimonials = () => {
       id: 1,
       name: 'John Smith',
       role: 'Project Manager',
-      company: 'BuildTech Solutions',
+      company: 'Goal International Academy',
+      location: 'Dillibazar, Kathmandu',
       category: 'civil',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
+      image: './images/company/goal.jpg',
       quote: "PanchaChakshu's civil engineering team delivered exceptional results on our commercial building project. Their attention to detail and innovative solutions helped us overcome complex structural challenges.",
       rating: 5,
     },
@@ -19,9 +20,10 @@ const Testimonials = () => {
       id: 2,
       name: 'Sarah Johnson',
       role: 'Chief Technology Officer',
-      company: 'InnovateTech',
+      company: 'Global Visa Advisor Educational Consultancy',
       category: 'computer',
-      image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
+      location: 'Dillibazar, Kathmandu',
+      image: './images/company/globalvisa.jpg',
       quote: 'The computer engineering division at PanchaChakshu helped us develop a cutting-edge IoT solution that revolutionized our manufacturing process. Their expertise in both hardware and software integration was invaluable.',
       rating: 5,
     },
@@ -29,9 +31,10 @@ const Testimonials = () => {
       id: 3,
       name: 'Michael Chen',
       role: 'Lead Architect',
-      company: 'DesignCraft Studios',
+      company: 'Care Kathmandu',
+      location: "Bagbazar, Kathmandu",
       category: 'architecture',
-      image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
+      image: './images/company/carekathmandu.jpg',
       quote: "Working with PanchaChakshu's architectural team was a pleasure. They brought our vision to life while incorporating sustainable design principles and innovative space utilization.",
       rating: 4,
     },
@@ -39,9 +42,10 @@ const Testimonials = () => {
       id: 4,
       name: 'Emily Rodriguez',
       role: 'Operations Director',
-      company: 'PowerGrid Solutions',
+      company: 'ASBHI International',
+      location: 'Dillibazar, Kathmandu',
       category: 'electrical',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
+      image: './images/company/asbhi.jpg',
       quote: 'The electrical engineering team provided excellent solutions for our power distribution challenges. Their expertise in smart grid technology and renewable energy integration was impressive.',
       rating: 5,
     },
@@ -49,7 +53,8 @@ const Testimonials = () => {
       id: 5,
       name: 'David Park',
       role: 'Manufacturing Head',
-      company: 'AutoTech Industries',
+      company: 'Aspirants Educational Group',
+      location: 'Dillibazar, Kathmandu',
       category: 'mechanical',
       image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
       quote: "PanchaChakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
@@ -68,7 +73,7 @@ const Testimonials = () => {
 
   const filteredTestimonials = activeCategory === 'all'
     ? testimonials
-    : testimonials.filter(t => t.category === activeCategory);
+    : testimonials.filter(t => t.care === activeCategory);
 
   const renderStars = (rating) => {
     return [...Array(5)].map((_, index) => (
@@ -147,6 +152,7 @@ const Testimonials = () => {
                     <h3 className="font-bold text-lg text-neutral-900">{testimonial.name}</h3>
                     <p className="text-neutral-600">{testimonial.role}</p>
                     <p className="text-primary font-medium">{testimonial.company}</p>
+                    <p className="text-primary font-medium">{testimonial.location}</p>
                   </div>
                 </div>
                 <div className="mb-4 flex">

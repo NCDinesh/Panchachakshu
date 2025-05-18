@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img src="./images/logo.png" alt="" className='size-14'/>
-            <span className="text-2xl font-bold ">PanchaChakshu</span>
+            <span className="text-2xl font-bold block md:hidden lg:block">PanchaChakshu</span>
           </Link>
 
           {/* Desktop Navigation */}
