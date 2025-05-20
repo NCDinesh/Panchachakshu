@@ -59,7 +59,9 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-primary text-white py-32">
+      <section className="relative  text-white py-32 bg-cover bg-center mt-24"
+        style={{ backgroundImage: `url('./images/background.png')` }}
+>
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -67,26 +69,26 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl"
           >
-            <h1 className="text-5xl font-bold mb-6 text-white">
+            {/* <h1 className="text-5xl font-bold mb-6 text-white">
               Vision Beyond Boundaries in Engineering Excellence
             </h1>
             <p className="text-xl text-gray-300 mb-8">
               PanchaChakshu Engineering Solutions brings together expertise across five core engineering
               disciplines to deliver comprehensive solutions for modern challenges.
-            </p>
+            </p> */}
 
           </motion.div>
         </div>
         
         {/* Background Pattern */}
-        <div className="absolute inset-0 z-0 opacity-10">
+        {/* <div className="absolute inset-0 z-0 opacity-10">
           <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
               <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.5" />
             </pattern>
             <rect width="100" height="100" fill="url(#grid)" />
           </svg>
-        </div>
+        </div> */}
       </section>
 
       {/* Services Overview */}
