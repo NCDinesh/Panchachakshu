@@ -19,8 +19,12 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20 ">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <img src="./images/logo.png" alt="" className='size-14'/>
-            <span className="text-2xl font-bold block md:hidden lg:block">PanchaChakshu</span>
+            <img src="./images/logo.png" alt="" className='size-14' />
+            <div className="name">
+              <span className="text-2xl font-bold block md:hidden lg:block">PanchaChakshu</span>
+              <p className='block md:hidden lg:block'>Engineering Solution</p>
+            </div>
+
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,7 +83,7 @@ const Navbar = () => {
         )}
       </div>
     </nav>
-    
+
   );
 };
 
