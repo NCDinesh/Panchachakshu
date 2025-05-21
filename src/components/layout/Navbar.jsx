@@ -22,7 +22,7 @@ const Navbar = () => {
             <img src="./images/logo.png" alt="" className='size-14' />
             <div className="name">
               <span className="text-2xl font-bold block md:hidden lg:block">PanchaChakshu</span>
-              <p className='block md:hidden lg:block'>Engineering Solution</p>
+              <p className='block md:hidden lg:block'>Engineering Solution Pvt. Ltd.</p>
             </div>
 
           </Link>

@@ -35,13 +35,13 @@ const About = () => {
     {
       name: 'Er. Aavash Adhikari',
       role: 'Chief Executive Officer',
-      image: '/images/team/ceo.jpg',
+      image: '/images/team/CEO.jpeg',
       // description: 'With over 20 years of experience in engineering and leadership.',
     },
     {
       name: 'Er. Mahesh Raj Joshi',
       role: 'Chief Operating Officer',
-      image: '/images/team/civil-head.jpg',
+      image: '/images/team/COO.jpg',
       // description: 'Expert in sustainable infrastructure development.',
     },
     {
@@ -51,9 +51,9 @@ const About = () => {
       // description: 'Specialist in power systems and renewable energy.',
     },
       {
-      name: 'Lekhnath Neupane',
+      name: 'Himesh Bhattarai',
       role: 'Chief Technical Officer',
-      image: '/images/team/electrical-head.jpg',
+      image: '/images/team/CTO.webp',
       // description: 'Specialist in power systems and renewable energy.',
     },
 
@@ -123,7 +123,7 @@ const About = () => {
                 <img
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
                   alt="Engineering team collaboration"
-                  className="object-cover w-full h-full"
+                  className="object-cover "
                 />
               </div>
             </motion.div>

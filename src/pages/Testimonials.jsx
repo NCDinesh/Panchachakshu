@@ -101,16 +101,16 @@ const Testimonials = () => {
             transition={{ duration: 0.8 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Client Testimonials</h1>
-            <p className="text-xl text-neutral-200">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Clients</h1>
+            {/* <p className="text-xl text-neutral-200">
               Discover what our clients say about their experience working with PanchaChakshu
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </section>
 
       {/* Filter Categories */}
-      <section className="py-8 bg-neutral-100">
+      {/* <section className="py-8 bg-neutral-100">
         <div className="container">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
@@ -128,7 +128,7 @@ const Testimonials = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Testimonials Grid */}
       <section className="py-16">
@@ -149,8 +149,8 @@ const Testimonials = () => {
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h3 className="font-bold text-lg text-neutral-900">{testimonial.name}</h3>
-                    <p className="text-neutral-600">{testimonial.role}</p>
+                    {/* <h3 className="font-bold text-lg text-neutral-900">{testimonial.name}</h3> */}
+                    {/* <p className="text-neutral-600">{testimonial.role}</p> */}
                     <p className="text-primary font-medium">{testimonial.company}</p>
                     <p className="text-primary font-medium">{testimonial.location}</p>
                   </div>
@@ -158,7 +158,7 @@ const Testimonials = () => {
                 <div className="mb-4 flex">
                   {renderStars(testimonial.rating)}
                 </div>
-                <blockquote className="text-neutral-700 italic">"{testimonial.quote}"</blockquote>
+                {/* <blockquote className="text-neutral-700 italic">"{testimonial.quote}"</blockquote> */}
               </motion.div>
             ))}
           </div>
@@ -166,7 +166,7 @@ const Testimonials = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-neutral-100">
+      {/* <section className="py-16 bg-neutral-100">
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
@@ -188,7 +188,7 @@ const Testimonials = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
 
     

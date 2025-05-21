@@ -158,7 +158,7 @@ const Pricing = () => {
       </section>
 
       {/* Additional Services */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-4">Additional Services</h2>
@@ -189,7 +189,7 @@ const Pricing = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
