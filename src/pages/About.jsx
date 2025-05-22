@@ -47,10 +47,10 @@ const About = () => {
     {
       name: 'Lekhnath Neupane',
       role: 'Chief Technical Officer',
-      image: '/images/team/electrical-head.jpg',
+      image: '/images/team/CTO2.jpeg',
       // description: 'Specialist in power systems and renewable energy.',
     },
-      {
+    {
       name: 'Himesh Bhattarai',
       role: 'Chief Technical Officer',
       image: '/images/team/CTO.webp',
@@ -60,7 +60,7 @@ const About = () => {
     {
       name: 'Nitesh Mishra',
       role: 'Marketing Manager',
-      image: '/images/team/marketing.jpg',
+      image: '/images/team/marketingmanager.enc',
       // description: 'Leading innovation in software and IoT solutions.',
     },
     {
@@ -92,7 +92,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 bg-white">
+      {/* <section className="py-16 bg-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -129,7 +129,7 @@ const About = () => {
             </motion.div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Our Values */}
       <section className="py-16 bg-gray-50">
@@ -194,30 +194,30 @@ const About = () => {
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center">
-  {team.map((member, index) => (
-    <motion.div
-      key={member.name}
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center"
-    >
-      <div className="w-32 h-32 overflow-hidden rounded-full mt-6">
-        <img
-          src={member.image}
-          alt={member.name}
-          className="object-cover w-full h-full"
-        />
-      </div>
+            {team.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                className="w-80 bg-white rounded-lg shadow-lg overflow-hidden flex flex-col items-center text-center"
+              >
+                <div className="w-32 h-32 overflow-hidden rounded-full mt-6">
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className="object-cover w-full h-full"
+                  />
+                </div>
 
-      <div className="p-6">
-        <h3 className="text-xl font-bold mb-1">{member.name}</h3>
-        <p className="text-secondary mb-2">{member.role}</p>
-        <p className="text-gray-600">{member.description}</p>
-      </div>
-    </motion.div>
-  ))}
-</div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold mb-1">{member.name}</h3>
+                  <p className="text-secondary mb-2">{member.role}</p>
+                  {/* <p className="text-gray-600">{member.description}</p> */}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </div>

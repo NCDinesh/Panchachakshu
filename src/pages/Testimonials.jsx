@@ -102,9 +102,9 @@ const Testimonials = () => {
             className="max-w-3xl mx-auto text-center"
           >
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Our Clients</h1>
-            {/* <p className="text-xl text-neutral-200">
-              Discover what our clients say about their experience working with PanchaChakshu
-            </p> */}
+            <p className="text-xl text-neutral-200">
+              We are proud to collaborate with a diverse range of clients who trust us to deliver innovative engineering solutions
+            </p>
           </motion.div>
         </div>
       </section>
