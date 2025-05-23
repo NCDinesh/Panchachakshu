@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import Popup from '../components/Popup/Popup';
 
 const Home = () => {
   const services = [
@@ -58,6 +59,8 @@ const Home = () => {
 
   return (
     <div>
+
+      <Popup></Popup>
       {/* Hero Section */}
       <section className="relative  text-white py-32 bg-cover bg-center mt-24"
         style={{ backgroundImage: `url('./images/background.png')` }}

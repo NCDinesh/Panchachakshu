@@ -56,7 +56,7 @@ const Testimonials = () => {
       company: 'Aspirants Educational Group',
       location: 'Dillibazar, Kathmandu',
       category: 'mechanical',
-      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&q=80',
+      image: './images/company/aspirants.png',
       quote: "PanchaChakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
       rating: 5,
     },
@@ -140,7 +140,7 @@ const Testimonials = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-white rounded-lg shadow-lg p-8 border border-neutral-200"
+                className="bg-white rounded-lg shadow-lg p-8 border border-neutral-200 "
               >
                 <div className="flex items-center mb-6">
                   <img

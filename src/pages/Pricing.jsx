@@ -5,7 +5,7 @@ const Pricing = () => {
   const plans = [
     {
       name: '3 Months subscription',
-      price: '70K',
+      price: '52,999',
       description: 'Perfect for small projects and initial consultations',
       features: [
         'Occasion/Information Post',
@@ -18,7 +18,7 @@ const Pricing = () => {
     },
     {
       name: '1 Year Subscription',
-      price: '240K',
+      price: '199K',
       description: 'Tailored for large-scale and complex engineering projects',
 
       features: [
@@ -32,7 +32,7 @@ const Pricing = () => {
     },
     {
       name: '6 Months Subscription',
-      price: '130K',
+      price: '101K',
       description: 'Ideal for medium-sized projects and detailed engineering solutions',
      features: [
         'Occasion/Information Post',
