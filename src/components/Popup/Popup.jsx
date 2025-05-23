@@ -29,7 +29,7 @@ const Popup = () => {
           ✕
         </button>
         <img
-          src="./images/webdevelopmentpricing.png"
+          src="./images/pricing.jpg"
           alt="Pricing"
           className="h-[600px] w-auto object-cover rounded-lg shadow-lg"
         />
