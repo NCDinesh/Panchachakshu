@@ -13,7 +13,7 @@ const Testimonials = () => {
       location: 'Dillibazar, Kathmandu',
       category: 'civil',
       image: './images/company/goal.jpg',
-      quote: "PanchaChakshu's civil engineering team delivered exceptional results on our commercial building project. Their attention to detail and innovative solutions helped us overcome complex structural challenges.",
+      quote: "Panchachakshu's civil engineering team delivered exceptional results on our commercial building project. Their attention to detail and innovative solutions helped us overcome complex structural challenges.",
       rating: 5,
     },
     {
@@ -57,7 +57,7 @@ const Testimonials = () => {
       location: 'Dillibazar, Kathmandu',
       category: 'mechanical',
       image: './images/company/aspirants.png',
-      quote: "PanchaChakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
+      quote: "Panchachakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
       rating: 5,
     },
   ];

@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img src="./images/logo.png" alt="" className='size-14' />
             <div className="name">
-              <span className="text-2xl font-bold block md:hidden lg:block">PanchaChakshu</span>
+              <span className="text-2xl font-bold block md:hidden lg:block">Panchachakshu</span>
               <p className='block md:hidden lg:block'>Engineering Solution Pvt. Ltd.</p>
             </div>
 

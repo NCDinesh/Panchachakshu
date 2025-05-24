@@ -164,7 +164,7 @@ const About = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl font-bold mb-6">Why "PanchaChakshu"?</h2>
             <p className="text-gray-600 mb-8">
-              "PanchaChakshu" derives from Sanskrit, meaning "five eyes" or "five visions." This name
+              "Panchachakshu" derives from Sanskrit, meaning "five eyes" or "five visions." This name
               represents our comprehensive approach to engineering through five distinct yet
               interconnected disciplines. Just as the five senses work together to provide a complete
               understanding of the world, our five engineering departments collaborate to deliver
