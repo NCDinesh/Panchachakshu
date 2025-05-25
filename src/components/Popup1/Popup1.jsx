@@ -1,7 +1,21 @@
+// Update your existing Popup1.js file with this code:
+
 import React, { useState, useEffect } from 'react';
+import { useFirstVisit } from '../../contexts/FirstVisitContext'; // Adjust path as needed
 
 const Popup1 = () => {
-  const [screenPopup, setScreenPopup] = useState(true);
+  const [screenPopup, setScreenPopup] = useState(false);
+  const { hasVisitedHome } = useFirstVisit();
+
+  useEffect(() => {
+    if (!hasVisitedHome) {
+      const timer = setTimeout(() => {
+        setScreenPopup(true);
+      }, 500); 
+
+      return () => clearTimeout(timer);
+    }
+  }, [hasVisitedHome]);
 
   useEffect(() => {
     const handleKeyDown = (event) => {

@@ -6,9 +6,11 @@ import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import Testimonials from './pages/Testimonials';
+import { FirstVisitProvider } from './contexts/FirstVisitContext';
 
 function App() {
   return (
+    <FirstVisitProvider>
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -22,6 +24,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </FirstVisitProvider>
   );
 }
 
