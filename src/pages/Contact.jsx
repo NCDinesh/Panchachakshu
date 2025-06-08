@@ -27,15 +27,15 @@ const Contact = () => {
     setIsSubmitting(true);
 
     // Replace with your actual SheetDB API endpoint URL
-    const sheetdbURL = 'https://sheetdb.io/api/v1/mhehzb5scfn61';
+    const sheetdbURL = 'https://sheetdb.io/api/v1/2i7aij4jr3h86';
 
     try {
       // Send email with EmailJS
       await emailjs.send(
-        'service_6t6dnir',
-        'template_0bsa6qh',
+        'service_zx57fnj',
+        'template_hwbgfw9',
         formData,
-        't57Fjtc9OaPTHyU75'
+        'Cgi3MYaj1JSj1Kk4K'
       );
 
       // Store in Google Sheet via SheetDB

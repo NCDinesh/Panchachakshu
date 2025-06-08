@@ -60,6 +60,30 @@ const Testimonials = () => {
       quote: "Panchachakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
       rating: 5,
     },
+
+        {
+      id: 6,
+      name: '',
+      role: '',
+      company: 'The exotica',
+      location: 'Chabahil, Kathmandu',
+      category: 'mechanical',
+      image: './images/company/exotica.jpg',
+      quote: "Panchachakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
+      rating: 5,
+    },
+
+       {
+      id: 7,
+      name: '',
+      role: '',
+      company: 'Imperial International Education',
+      location: 'Bagbazar, Kathmandu',
+      category: 'mechanical',
+      image: './images/company/imperial.jpg',
+      quote: "Panchachakshu's mechanical engineering team helped us optimize our production line with innovative automation solutions. Their expertise in CAD and thermal analysis was crucial to our success.",
+      rating: 5,
+    },
   ];
 
   const categories = [
