@@ -17,7 +17,7 @@ const Navbar = () => {
     <nav className=" shadow-md fixed w-full z-50 mb-12  bg-primary text-white">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20 ">
-          {/* Logo */}
+       
           <Link to="/" className="flex items-center space-x-2">
             <img src="./images/logo.png" alt="" className='size-14' />
             <div className="name">

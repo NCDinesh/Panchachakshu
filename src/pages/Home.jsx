@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Popup from '../components/Popup/Popup';
 import Popup1 from '../components/Popup1/Popup1';
 
+
+
 const Home = () => {
   const services = [
     {
@@ -64,49 +66,46 @@ const Home = () => {
       <Popup1></Popup1>
       <Popup></Popup>
       
-      {/* Hero Section */}
-      <section className="relative  text-white py-32 bg-cover bg-center mt-24"
-        style={{ backgroundImage: `url('./images/background.png')` }}
->
-        <div className="container">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-3xl"
-          >
-            {/* <h1 className="text-5xl font-bold mb-6 text-white">
-              Vision Beyond Boundaries in Engineering Excellence
-            </h1>
-            <p className="text-xl text-gray-300 mb-8">
-              PanchaChakshu Engineering Solutions brings together expertise across five core engineering
-              disciplines to deliver comprehensive solutions for modern challenges.
-            </p> */}
+    <section className="relative text-white py-32 mt-24 overflow-hidden">
+  {/* Background Zoom + Fade */}
+  <motion.div
+    className="absolute inset-0 bg-cover bg-center z-0"
+    style={{ backgroundImage: `url('./images/background.png')` }}
+    initial={{ scale: 1.2, opacity: 0 }}
+    animate={{ scale: 1, opacity: 1 }}
+    transition={{ duration: 5, ease: "easeInOut" }}
+  />
 
-          </motion.div>
-        </div>
-        
-        {/* Background Pattern */}
-        {/* <div className="absolute inset-0 z-0 opacity-10">
-          <svg className="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
-            <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
-              <path d="M 8 0 L 0 0 0 8" fill="none" stroke="currentColor" strokeWidth="0.5" />
-            </pattern>
-            <rect width="100" height="100" fill="url(#grid)" />
-          </svg>
-        </div> */}
-      </section>
+  {/* Optional: Dark overlay for better contrast */}
+  <div className="absolute inset-0 bg-black/50 z-10" />
+
+  {/* Content */}
+  <div className="container relative z-20">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 2, ease: "easeOut" }}
+      className="max-w-3xl"
+    >
+    </motion.div>
+  </div>
+</section>
 
       {/* Services Overview */}
       <section className="py-20 bg-gray-50">
         <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Engineering Expertise</h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Discover our comprehensive range of engineering services designed to meet your project needs
-              with precision and innovation.
-            </p>
-          </div>
+          <motion.div
+  className="text-center mb-16"
+  initial={{ opacity: 0, y: 60 }}        // Starts off 60px lower
+  animate={{ opacity: 1, y: 0 }}         // Moves to original position
+  transition={{ duration: 2, ease: "easeOut" }} // Slow transition
+>
+  <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Engineering Expertise</h2>
+  <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+    Discover our comprehensive range of engineering services designed to meet your project needs
+    with precision and innovation.
+  </p>
+</motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
