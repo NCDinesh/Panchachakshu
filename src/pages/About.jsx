@@ -1,4 +1,6 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const About = () => {
   const values = [
@@ -69,13 +71,26 @@ const About = () => {
       image: '/images/team/softwaredeveloper.jpg',
       // description: 'Award-winning architect with a focus on sustainable design.',
     },
+    
+
 
   ];
+
+    const location = useLocation();  
+    useEffect(() => {
+    const id = location.hash.replace("#", "");
+    if (id) {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location])
 
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-20">
+      <section className="bg-gradient-to-br from-primary to-primary-dark text-white py-20" id="panchachakshu">
         <div className="container">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -185,9 +200,9 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container">
-          <div className="text-center mb-16">
+      <section className="py-20 bg-gray-50" id="ourteam">
+        <div className="container" >
+          <div className="text-center mb-16" >
             <h2 className="text-3xl font-bold mb-4">Meet Our Leadership Team</h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Our diverse team of experts brings together decades of experience across all engineering disciplines.
