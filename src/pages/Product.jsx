@@ -46,7 +46,47 @@ const Products = () => {
   link: "https://gym-website-psi-vert.vercel.app/" // Replace with your actual link if available
 },
 
+{
+  id: "college-department",
+  title: "College Department Websites",
+  description: "Professional websites for academic departments to share curriculum details, faculty profiles, notices, and student resources.",
+  icon: (
+    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422A12.083 12.083 0 0118 20.055h-3a9.06 9.06 0 00-.832-4.118L12 14z M12 14l-6.16-3.422A12.083 12.083 0 006 20.055h3a9.06 9.06 0 01.832-4.118L12 14z" />
+    </svg>
+  ),
+  image: "./images/products/department.png", 
+  features: [
+    "Department Overview & Objectives",
+    "Faculty Profiles & Research Areas",
+    "Course Curriculum & Syllabus",
+    "Student Notices & Announcements",
+    "Events & Seminar Updates",
+    "Downloadable Academic Resources",
+  ],
+  link: "https://doenc.ioepc.edu.np/" 
+},
 
+{
+  id: "hospital",
+  title: "Hospital Management System",
+  description: "A comprehensive system to manage hospital operations including patient records, appointments, billing, and staff management.",
+  icon: (
+    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-3-3v6m7-13H5a2 2 0 00-2 2v16a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z" />
+    </svg>
+  ),
+  image: "./images/products/hospital.png", // Update this with a relevant hospital UI screenshot
+  features: [
+    "Patient Registration & Records",
+    "Doctor Appointment Scheduling",
+    "Billing & Invoice Management",
+    "Inventory & Pharmacy Tracking",
+    "Staff & Ward Management",
+    "Medical History & Reports",
+  ],
+  link: "https://medical-frontend-omega.vercel.app/about" // Replace with your actual deployed project link
+},
 
     {
       id: "portfolio",
@@ -58,7 +98,7 @@ const Products = () => {
         </svg>
       ),
       image:
-      "https://images.unsplash.com/photo-1677530410699-f692c94cf806?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBlcnNvbmFsJTIwcG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
+      "./images/products/portfolio.png",
       features: [
         "Modern UI/UX",
         "Fast Loading",
