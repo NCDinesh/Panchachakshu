@@ -13,7 +13,7 @@ const Products = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h18l-1 8H4L3 3z M5 21h14M9 17h6" />
         </svg>
       ),
-      image:"https://media.istockphoto.com/id/1224339637/photo/online-shop-website-on-home-office-setup.webp?a=1&b=1&s=612x612&w=0&k=20&c=ksTeywBX850nHjnPSI-8eiHYsDe3MQdDlJPJvalAQl4=",
+      image:"./images/products/ecommerce1.png",
         features: [
         "Secure Payment Gateway",
         "User Account Management",
@@ -22,7 +22,32 @@ const Products = () => {
         "Responsive Design",
         "SEO Friendly",
       ],
+      link:"https://ecommerce-phi-amber-49.vercel.app/"
     },
+
+    {
+  id: "gym",
+  title: "Gym & Fitness Websites",
+  description: "Modern websites for gyms and fitness centers with class schedules, membership plans, and trainer profiles.",
+  icon: (
+    <svg className="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 6h12M6 18h12M6 6v12M18 6v12" />
+    </svg>
+  ),
+  image: "./images/products/gym.png", // Replace with your local image path or use an Unsplash URL
+  features: [
+    "Online Membership Registration",
+    "Class Schedule & Booking",
+    "Trainer Profiles",
+    "Photo & Video Gallery",
+    "Mobile-Responsive Design",
+    "Contact & Location Map",
+  ],
+  link: "https://gym-website-psi-vert.vercel.app/" // Replace with your actual link if available
+},
+
+
+
     {
       id: "portfolio",
       title: "Portfolio Websites",
@@ -159,12 +184,14 @@ const Products = () => {
                   </li>
                 ))}
               </ul>
-              <Link
-                to="/contact"
-                className="inline-block mt-8 px-6 py-3 bg-secondary hover:bg-secondary-light text-white rounded-md transition-all duration-300"
-              >
-                View Product
-              </Link>
+            <a
+  href={currentProduct.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block mt-8 px-6 py-3 bg-secondary hover:bg-secondary-light text-white rounded-md transition-all duration-300"
+>
+  View Product
+</a>
             </div>
 
             {/* Image */}
