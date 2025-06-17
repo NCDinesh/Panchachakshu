@@ -10,9 +10,11 @@ const Navbar = () => {
       name: 'About',
       dropdown: [
         { name: 'About Panchachakshu', path: '/about#panchachakshu' },
-        { name: 'Our Products', path: '/products' },
         { name: 'Our Team', path: '/about#ourteam' },
       ],
+    },
+    {
+      name: "Our Products", path:"/products"
     },
     {
       name: 'Services',
@@ -37,7 +39,7 @@ const Navbar = () => {
             <img src="./images/logo.png" alt="Logo" className="size-14" />
             <div className="name">
               <span className="text-2xl font-bold block md:hidden lg:block">Panchachakshu</span>
-              <p className="block md:hidden lg:block">Engineering Solution Pvt. Ltd.</p>
+              <p className="block md:hidden lg:block text-blue-500">Engineering Solution Pvt. Ltd.</p>
             </div>
           </Link>
 

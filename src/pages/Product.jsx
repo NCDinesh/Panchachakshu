@@ -98,7 +98,7 @@ const Products = () => {
         </svg>
       ),
       image:
-      "./images/products/portfolio.png",
+      "./images/products/portfoliowebsite.png",
       features: [
         "Modern UI/UX",
         "Fast Loading",
@@ -107,6 +107,7 @@ const Products = () => {
         "Contact & Inquiry Forms",
         "Custom Domain Support",
       ],
+      link:"https://portfoliowebsite-client.vercel.app/"
     },
     {
       id: "graphics",
