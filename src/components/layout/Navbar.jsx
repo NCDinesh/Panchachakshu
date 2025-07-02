@@ -38,8 +38,8 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <img src="./images/logo.png" alt="Logo" className="size-14" />
             <div className="name">
-              <span className="text-2xl font-bold block md:hidden lg:block">Panchachakshu</span>
-              <p className="block md:hidden lg:block text-blue-500">Engineering Solution Pvt. Ltd.</p>
+              <span className="md:text-2xl text-lg font-bold block md:hidden lg:block">Panchachakshu</span>
+              <p className="block md:hidden lg:block text-blue-500 text-sm md:text-lg">Engineering Solution Pvt. Ltd.</p>
             </div>
           </Link>
 
